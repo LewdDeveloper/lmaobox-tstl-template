@@ -1,0 +1,25 @@
+{
+  "$schema": "https://raw.githubusercontent.com/TypeScriptToLua/TypeScriptToLua/master/tsconfig-schema.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext"],
+    "moduleResolution": "Node",
+    "types": [
+        "lua-types/5.4",
+        "@lewddeveloper/lmaobox-declarations"
+    ],
+    "outDir": "dist",
+    "strict": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "tstl": {
+    "luaTarget": "5.4",
+    "noImplicitGlobalVariables": true,
+    "noImplicitSelf": true,
+    "luaLibImport": "inline",
+    "sourceMapTraceback": false
+  }
+}
